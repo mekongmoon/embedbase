@@ -3,7 +3,7 @@
 requires = ["poetry_core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry]
+[project]
 name = "embedbase-client"
 version = "0.1.0"
 description = "Python client for Embedbase"
@@ -27,10 +27,6 @@ classifiers = [  #! Update me
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
 ]
-
-[tool.poetry.scripts]
-# Entry points for the package https://python-poetry.org/docs/pyproject/#scripts
-"embedbase-client" = "embedbase_client.__main__:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"
