@@ -1,3 +1,5 @@
+import Navbar from '@/components/Navbar'
+
 export default function ChatLayout({
   // Layouts must accept a children prop.
   // This will be populated with nested layouts or pages
@@ -5,7 +7,12 @@ export default function ChatLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <div className="flex w-full max-w-4xl m-auto">{children}</div>
+  return (
+    <>
+      <Navbar />
+      <div className="m-auto flex w-full max-w-4xl">{children}</div>
+    </>
+  )
 }
 
 export const metadata = {
