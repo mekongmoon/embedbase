@@ -7,12 +7,11 @@ export default function ChatLayout({
 }: {
   children: React.ReactNode
 }) {
+  console.log(children)
   return (
     <>
       <Navbar />
-    <div className="m-auto flex w-full max-w-5xl">
-      {children}
-    </div>
+      <div className="m-auto flex w-full  max-w-7xl px-4">{children}</div>
     </>
   )
 }
