@@ -116,7 +116,7 @@ jobs:
 
       - name: Create Release
         if: steps.regex-match.outputs.match != '' || github.event.workflow_run || github.event_name == 'workflow_dispatch'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: hosted-${{ env.VERSION }}
           name: hosted-${{ env.VERSION }}
