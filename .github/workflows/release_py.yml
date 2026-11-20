@@ -40,7 +40,7 @@ jobs:
 
       - name: Set up cache
         if: ${{ steps.regex-match.outputs.match != '' }}
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v6.1.0
         with:
           path: sdk/embedbase-py/.venv
           key: venv-${{ matrix.python-version }}-${{ hashFiles('sdk/embedbase-py/pyproject.toml') }}-${{ hashFiles('sdk/embedbase-py/poetry.lock') }}
