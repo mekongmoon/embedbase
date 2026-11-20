@@ -86,7 +86,7 @@ jobs:
 
       - name: Create Release
         if: ${{ steps.regex-match.outputs.match != '' }}
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: sdk-py-${{ steps.regex-match.outputs.group1 }}
           name: sdk-py-${{ steps.regex-match.outputs.group1 }}
