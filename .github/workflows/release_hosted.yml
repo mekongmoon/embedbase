@@ -87,7 +87,7 @@ jobs:
 
       - name: Build and push
         if: steps.regex-match.outputs.match != '' || github.event.workflow_run || github.event_name == 'workflow_dispatch'
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v7
         with:
           context: hosted
           file: ./hosted/Dockerfile
